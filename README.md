@@ -1,2 +1,2 @@
 # Micro-Lab
-In this repository, I have put the codes of the Micro Lab lesson that I put in IUT.
+In this repository, I have placed the codes of the micro lab assignments that I have passed in IUT.
