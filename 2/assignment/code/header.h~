@@ -1,0 +1,12 @@
+#ifndef _header_INCLUDED_
+#define _header_INCLUDED_
+
+#include <mega16.h>
+#include <delay.h>
+
+#define port_a 1
+#define port_b 2
+#define port_c 3
+#define port_d 4
+
+#endif

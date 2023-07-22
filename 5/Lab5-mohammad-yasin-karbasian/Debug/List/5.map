@@ -1,0 +1,50 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+clockwies                                                                         0x0176       1
+turn                                                                              0x0177       1
+OverFlow                                                                          0x0178       1
+old                                                                               0x0179       2
+new                                                                               0x017B       2
+rpm                                                                               0x017D       2
+display_rpm                                                                       0x017F       2
+counter                                                                           0x0181       2
+speed                                                                             0x0183       2
+_base_y                                                                           0x0185       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+_lcd_x                                                                            R5           1
+_lcd_y                                                                            R4           1
+_lcd_maxx                                                                         R7           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x00082     51
+timer1_ovf_isr                                                                    0x000B5      6
+timer1_capt_isr                                                                   0x000BB      4
+timer2_ovf_isr                                                                    0x000BF     19
+q2                                                                                0x000D2     16
+q4                                                                                0x000E2     15
+changeB                                                                           0x000F1     27
+q5                                                                                0x0010C    184
+q6                                                                                0x001C4    118
+init                                                                              0x0023A     58
+_lcd_write_nibble_G100                                                            0x00274     20
+_lcd_write_data                                                                   0x00288     12
+lcd_gotoxy                                                                        0x00294     13
+lcd_clear                                                                         0x002A1     12
+lcd_putchar                                                                       0x002AD     21
+lcd_puts                                                                          0x002C2     17
+lcd_init                                                                          0x002D3     46
+put_buff_G101                                                                     0x00301     64
+_print_G101                                                                       0x00341    308
+sprintf                                                                           0x00475     52
+strlen                                                                            0x004A9     12
+strlenf                                                                           0x004B5     13

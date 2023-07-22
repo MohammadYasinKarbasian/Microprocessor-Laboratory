@@ -1,0 +1,9 @@
+#ifndef _polling_INCLUDED_
+#define _polling_INCLUDED_
+
+void ADCinit();
+unsigned int read_adc(unsigned char adc_input);
+void q1();
+void init();
+
+#endif

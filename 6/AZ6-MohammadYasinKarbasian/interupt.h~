@@ -1,0 +1,10 @@
+#ifndef _intrrupt_INCLUDED_
+#define _intrrupt_INCLUDED_
+
+interrupt [TIM0_OVF] void timer0_ovf_isr(void);
+interrupt [ADC_INT] void adc_isr(void);
+void init_q2();
+void init_q3();
+
+
+#endif

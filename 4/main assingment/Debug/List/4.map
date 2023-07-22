@@ -1,0 +1,48 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+counter                                                                           0x0198       4
+temp                                                                              0x019C      16
+_base_y                                                                           0x01AC       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+started                                                                           R5           1
+capacity                                                                          R6,R7        2
+glob_priod                                                                        R8,R9        2
+_lcd_x                                                                            R4           1
+_lcd_y                                                                            R11          1
+_lcd_maxx                                                                         R10          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+show                                                                              0x00092     92
+timer_counter                                                                     0x000EE     38
+parking                                                                           0x00114     70
+clock                                                                             0x0015A     86
+wave                                                                              0x001B0     52
+init_timer1                                                                       0x001E4      7
+ext_int0_isr                                                                      0x001EB      4
+ext_int1_isr                                                                      0x001EF      4
+ext_int2_isr                                                                      0x001F3      4
+timer0_ovf_isr                                                                    0x001F7      4
+timer1_ovf_isr                                                                    0x001FB     17
+main                                                                              0x0020C     76
+_lcd_write_nibble_G100                                                            0x00258     20
+_lcd_write_data                                                                   0x0026C     12
+lcd_gotoxy                                                                        0x00278     13
+lcd_clear                                                                         0x00285     12
+lcd_putchar                                                                       0x00291     21
+lcd_puts                                                                          0x002A6     17
+lcd_init                                                                          0x002B7     46
+put_buff_G101                                                                     0x002E5     64
+_print_G101                                                                       0x00325    308
+sprintf                                                                           0x00459     52
+strlen                                                                            0x0048D     12
+strlenf                                                                           0x00499     13

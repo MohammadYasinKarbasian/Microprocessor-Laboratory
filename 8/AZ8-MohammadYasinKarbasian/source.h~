@@ -1,0 +1,9 @@
+#ifndef _file_INCLUDED_
+#define _file_INCLUDED_
+
+void init();
+void q1();
+void q2();
+void q3();
+
+#endif

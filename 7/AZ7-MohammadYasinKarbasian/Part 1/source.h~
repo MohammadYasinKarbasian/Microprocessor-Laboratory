@@ -1,0 +1,8 @@
+#ifndef _source_INCLUDED_
+#define _source_INCLUDED_
+#include <alcd.h>
+
+void init();
+void q1();
+
+#endif

@@ -1,0 +1,25 @@
+#include <header.h>
+//long int data=0;
+unsigned int previous[8] = {0};
+//int counter = 0;
+void main(void)
+{
+init();
+
+// question 1
+//init_q1();
+//q1();
+
+// question 2
+//delay_ms(1000);
+init_q2();
+// question 3
+init_q3();
+#asm("sei")
+
+
+while (1)
+      {
+
+      }
+}

@@ -1,0 +1,31 @@
+#ifndef _headers_INCLUDED_
+#define _headers_INCLUDED_
+
+#include <mega16.h>
+#include <delay.h>
+#include <alcd.h>
+#include <stdio.h>
+#include <source.h>
+//
+//extern char clockwies=1;
+//extern char  turn=1;
+//extern char OverFlow=0;
+//extern unsigned int old=0;
+//extern unsigned int  new=0;
+//extern unsigned int  rpm=0;
+//extern unsigned int  display_rpm=0;
+//extern unsigned int counter=0;
+//extern unsigned int  speed=0;
+
+
+extern char clockwies;
+extern char  turn;
+extern char OverFlow;
+extern unsigned int old;
+extern unsigned int  new;
+extern unsigned int  rpm;
+extern unsigned int  display_rpm;
+extern unsigned int counter;
+extern unsigned int  speed;
+
+#endif

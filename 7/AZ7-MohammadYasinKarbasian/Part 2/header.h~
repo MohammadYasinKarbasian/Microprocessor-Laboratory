@@ -1,0 +1,56 @@
+#ifndef _header_INCLUDED_
+#define _header_INCLUDED_
+
+#include <math.h>
+#include <stdlib.h>
+#include <alcd.h>
+#include <delay.h>
+#include <mega16.h>
+#include <stdio.h>
+#include <source.h>
+
+char getchar_nv(void);
+#define DATA_REGISTER_EMPTY (1<<UDRE)
+#define RX_COMPLETE (1<<RXC)
+#define FRAMING_ERROR (1<<FE)
+#define PARITY_ERROR (1<<UPE)
+#define DATA_OVERRUN (1<<DOR)
+
+#define RX_BUFFER_SIZE 8
+
+#if RX_BUFFER_SIZE <= 256
+unsigned char rx_wr_index=0,rx_rd_index=0;
+#else
+unsigned int rx_wr_index=0,rx_rd_index=0;
+#endif
+
+#if RX_BUFFER_SIZE < 256
+unsigned char rx_counter=0;
+#else
+unsigned int rx_counter=0;
+#endif
+
+bit rx_buffer_overflow;
+
+#ifndef _DEBUG_TERMINAL_IO_
+#pragma used+
+
+#pragma used-
+#endif
+
+#define TX_BUFFER_SIZE 8
+char tx_buffer[TX_BUFFER_SIZE];
+
+#if TX_BUFFER_SIZE <= 256
+unsigned char tx_wr_index=0,tx_rd_index=0;
+#else
+unsigned int tx_wr_index=0,tx_rd_index=0;
+#endif
+
+#if TX_BUFFER_SIZE < 256
+unsigned char tx_counter=0;
+#else
+unsigned int tx_counter=0;
+#endif
+
+#endif
